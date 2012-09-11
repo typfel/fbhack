@@ -9,12 +9,9 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="span8 offset2">
-				<h1><%= title %></h1>
-				<p>Welcome to <%= title %></p>
-			</div>
-		</div>
+		<% questions.forEach(function (question) { %>
+					<% include question %>
+		<% }) %>
 	</div>
 	<script src="/lib/bootstrap.min.js"></script>
 </body>
